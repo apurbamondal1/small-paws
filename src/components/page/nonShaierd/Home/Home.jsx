@@ -1,3 +1,4 @@
+import Ourstory from "../Our story/Ourstory";
 import Baner from "./Baner/Baner";
 
 
@@ -11,7 +12,7 @@ const Home = () => {
             </div>
             {/* OurStory */}
             <div>
-                
+                <Ourstory></Ourstory>
             </div>
             {/* OrderCollections */}
             <div>

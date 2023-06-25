@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import './Baner.css';
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
@@ -28,6 +29,7 @@ const Baner = () => {
           className="mySwiper"
         >
           <SwiperSlide>
+            <div className=" carousel-image">
             <div className="h-[500px]  bg-[url('https://cdn.shopify.com/s/files/1/0605/0480/1480/files/petsdf.jpg?v=1641792457')] bg-center bg-cover text-white text-center bg-black bg-opacity-50 ">
               {" "}
               <h1 className="text-7xl font-medium pt-28">SUPPORT OUR CAUSE</h1>
@@ -47,8 +49,10 @@ const Baner = () => {
                 </div>
               </button>
             </div>
+            </div>
           </SwiperSlide>
           <SwiperSlide>
+            <div className="carousel-image" >
             <div className="h-[500px] bg-[url('https://cdn.shopify.com/s/files/1/0605/0480/1480/files/image.jpg?v=1643176347')] bg-center bg-cover text-white text-center  bg-opacity-50">
               <h1 className="text-7xl font-medium pt-28">TINY PAWS OFFICIAL</h1>
               <p className="py-10 text-2xl">
@@ -63,8 +67,10 @@ const Baner = () => {
                 </div>
               </button>
             </div>
+            </div>
           </SwiperSlide>
           <SwiperSlide>
+            <div className="carousel-image">
             <div className="h-[500px] bg-[url('https://cdn.shopify.com/s/files/1/0605/0480/1480/files/image_1.jpg?v=1643176440')] bg-center bg-cover text-white  text-center  bg-opacity-50">
               <h1 className="text-7xl font-medium pt-28">
                 THE TINY PAWS JOURNAL
@@ -80,6 +86,7 @@ const Baner = () => {
                   </span>
                 </div>
               </button>
+            </div>
             </div>
           </SwiperSlide>
         </Swiper>
