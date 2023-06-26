@@ -1,6 +1,6 @@
 import logo from '../../../assets/image/logo.png';
 import './Navbar.css';
-import { FaAngleDown } from "react-icons/fa6";
+import { FaAngleDown } from "react-icons/fa";
 
 const Navbar = () => {
   const menuitems = <>
