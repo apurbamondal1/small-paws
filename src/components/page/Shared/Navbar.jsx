@@ -1,6 +1,9 @@
+import { Link } from 'react-router-dom';
 import logo from '../../../assets/image/logo.png';
 import './Navbar.css';
-import { FaAngleDown } from "react-icons/fa";
+import { FaAngleDown,FaSistrix} from "react-icons/fa";
+import { GrCart } from "react-icons/gr";
+
 
 const Navbar = () => {
   const menuitems = <>
@@ -59,8 +62,16 @@ const Navbar = () => {
         {menuitems}
       </ul>
     </div>
-    <div className="navbar-end">
+    <div className="navbar-end ">
+      {/* <FaCartShopping></FaCartShopping>  */}
+      <FaSistrix></FaSistrix>
+      <input type='text' placeholder='Search' ></input>
+      
+      <span className='mx-8'><GrCart></GrCart></span>
+      
+    {/* {/* <FaUserLarge></FaUserLarge> */}
     </div>
+    <div><h1 className='mx-5'><Link to = '/Login'>Login</Link></h1></div>
   </div>
   );
 };
