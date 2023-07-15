@@ -4,7 +4,7 @@ import Footer from "../page/Shared/Footer";
 import Quick from "../page/Shared/Quick";
 import Login from "../Login/Login";
 import SignUp from "../SignUp/SignUP";
-import Clothe from "../Clothe/Clothe";
+
 
 
 const MainLayout = () => {
@@ -17,19 +17,8 @@ const MainLayout = () => {
           <Outlet />
         </div>
         <div>
-        <Clothe/>
-        </div>
-        <div>
         <Quick/>
         </div>
-       
-        {/* <div>
-        <Login></Login>
-        </div>
-        <div>
-       <SignUp></SignUp>
-        </div> */}
-
         <div>
           <Footer />
         </div>

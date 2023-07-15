@@ -1,0 +1,21 @@
+.product{
+    position: relative;
+    border: 2px solid;
+}
+.button{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-radius: 5px;
+   
+}
+.button:hover{
+    background-color: #ebc109;
+}
+.product img{
+    height: 200px;
+}
+.name{
+font-weight: bold;
+color: black;
+}

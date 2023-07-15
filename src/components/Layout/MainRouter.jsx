@@ -3,6 +3,7 @@ import MainLayout from "./MainLayout";
 import Home from "../page/nonShaierd/Home/Home";
 import SignUp from "../SignUp/SignUP";
 import Login from "../Login/Login";
+import Clothe from "../Clothe/Clothe";
 
 
 
@@ -15,6 +16,7 @@ export const router = createBrowserRouter([
       { path: "/home", element: <Home /> },
       { path: "/SignUP", element: <SignUp /> },
       { path: "/Login", element: <Login /> },
+      { path: "/Clothe", element: <Clothe /> },
       
     ],
   },

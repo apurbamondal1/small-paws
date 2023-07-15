@@ -20,14 +20,15 @@ const Navbar = () => {
 
         <div className='dropdown-container'>
         <li><a href='#' >Shop<FaAngleDown></FaAngleDown></a></li>
-        <div className='dropdown-content'>          
+        <div className='dropdown-content'> 
+
+        <li><Link to="./Clothe" >Clothing</Link></li>        
         <li><a href='#' >Must Have Collection</a></li>
         <li><a href='#' >For Dogs</a></li>
         <li><a href='#' >For Cats</a></li>
         <li><a href='#' >Bandanas & Collars</a></li>
         <li><a href='#' >Beds & Carriers</a></li>
         <li><a href='#' >Leash & Harness</a></li>
-        <li><a href='#' >Clothing</a></li>
         </div>
         </div>
         

@@ -7,28 +7,40 @@
 [
     {
         "id":1,
-        "image" : "https://i.ibb.co/6Bb0PJs/image1.jpg" 
+        "image" : "https://i.ibb.co/6Bb0PJs/image1.jpg" ,
+        "price" : 320,
+        "name" :  "Suit"
     
 
     },
     {
         "id":2,
-        "image" : "https://i.ibb.co/Lz3Ss5z/image2.jpg"
+        "image" : "https://i.ibb.co/Lz3Ss5z/image2.jpg",
+        "price" : 323,
+        "name" :  "Normal"
     },
     {
         "id":3,
-        "image" : "https://i.ibb.co/Sm4BH3n/image3.webp"
+        "image" : "https://i.ibb.co/Sm4BH3n/image3.webp",
+        "price" : 32,
+        "name" :  "Rainy Suit"
     },
     {
         "id":4,
-        "image" : "https://i.ibb.co/bPQH4NT/image4.jpg"
+        "image" : "https://i.ibb.co/bPQH4NT/image4.jpg",
+        "price" : 3200,
+        "name" :  "T-Shirt"
     },
     {
         "id":5,
-        "image" : "https://i.ibb.co/0F8vKZz/image5.jpg"
+        "image" : "https://i.ibb.co/0F8vKZz/image5.jpg",
+        "price" : 327,
+        "name" :  "Shirt"
     },
     {
         "id":6,
-        "image" : "https://i.ibb.co/f82HS5j/image6.jpg"
+        "image" : "https://i.ibb.co/f82HS5j/image6.jpg",
+        "price" : 310,
+        "name" :  "Winter Coat"
     }
 ]
