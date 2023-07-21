@@ -4,6 +4,8 @@ import Home from "../page/nonShaierd/Home/Home";
 import SignUp from "../SignUp/SignUP";
 import Login from "../Login/Login";
 import Clothe from "../Clothe/Clothe";
+import TrackOrder from "../TrackOrder/TrackOrder";
+import { productsAndCartLoaders } from "../../Loaders/productsAndCartLoaders";
 
 
 
@@ -16,7 +18,16 @@ export const router = createBrowserRouter([
       { path: "/home", element: <Home /> },
       { path: "/SignUP", element: <SignUp /> },
       { path: "/Login", element: <Login /> },
-      { path: "/Clothe", element: <Clothe /> },
+
+      { 
+        path: "/TrackOrder",
+        loader: productsAndCartLoaders,
+       element: <TrackOrder />
+       },
+
+      {
+         path: "/Clothe",
+          element: <Clothe /> },
       
     ],
   },

@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Clothes.css";
+import './Clothes.css'
 
 
 
@@ -14,12 +14,7 @@ const Clothes = ({option,handlecard}) => {
         <div className="card-body items-center text-center">
           <h1 className='name'>Name : {name}</h1>
           <h2 className='mb-4 text-black'>Price : ${price}</h2>
-          <button className="btn btn-primary button" onClick={() => handlecard(option)}>ADD TO CARD</button>
-          {/* <p>If a dog chews shoes whose shoes does he choose?</p> */}
-          {/* <div className="card-actions">
-           
-            
-          </div> */}
+          <button className=" button" onClick={() => handlecard(option)}>ADD TO CARD</button>
         </div>
       </div>
     );

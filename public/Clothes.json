@@ -1,46 +1,77 @@
 
-
-
-
-
-
 [
     {
-        "id":1,
         "image" : "https://i.ibb.co/6Bb0PJs/image1.jpg" ,
         "price" : 320,
-        "name" :  "Suit"
+        "name" :  "Suit",
+        "quantity": 0
     
 
     },
     {
-        "id":2,
         "image" : "https://i.ibb.co/Lz3Ss5z/image2.jpg",
         "price" : 323,
-        "name" :  "Normal"
+        "name" :  "Normal",
+        "quantity": 0
     },
     {
-        "id":3,
         "image" : "https://i.ibb.co/Sm4BH3n/image3.webp",
         "price" : 32,
-        "name" :  "Rainy Suit"
+        "name" :  "Rainy Suit",
+        "quantity": 0
     },
     {
-        "id":4,
         "image" : "https://i.ibb.co/bPQH4NT/image4.jpg",
         "price" : 3200,
-        "name" :  "T-Shirt"
+        "name" :  "T-Shirt",
+        "quantity": 0
     },
     {
-        "id":5,
         "image" : "https://i.ibb.co/0F8vKZz/image5.jpg",
         "price" : 327,
-        "name" :  "Shirt"
+        "name" :  "Shirt",
+        "quantity": 0
     },
     {
-        "id":6,
         "image" : "https://i.ibb.co/f82HS5j/image6.jpg",
         "price" : 310,
-        "name" :  "Winter Coat"
+        "name" :  "Winter Coat",
+        "quantity": 0
+    },
+    {
+        "image" : "https://i.ibb.co/f82HS5j/image6.jpg",
+        "price" : 310,
+        "name" :  "Winter Coat",
+        "quantity": 0
+    },
+    {
+        "image" : "https://i.ibb.co/f82HS5j/image6.jpg",
+        "price" : 310,
+        "name" :  "Winter Coat",
+        "quantity": 0
+    },
+    {
+        "image" : "https://i.ibb.co/f82HS5j/image6.jpg",
+        "price" : 310,
+        "name" :  "Winter Coat",
+        "quantity": 0
+    },
+    {
+        "image" : "https://i.ibb.co/f82HS5j/image6.jpg",
+        "price" : 310,
+        "name" :  "Winter Coat",
+        "quantity": 0
+    },
+    {
+        "image" : "https://i.ibb.co/f82HS5j/image6.jpg",
+        "price" : 310,
+        "name" :  "Winter Coat",
+        "quantity": 0
+    },
+    {
+        "image" : "https://i.ibb.co/f82HS5j/image6.jpg",
+        "price" : 310,
+        "name" :  "Winter Coat",
+        "quantity": 0
     }
 ]

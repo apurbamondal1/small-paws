@@ -8,10 +8,10 @@ import { GrCart } from "react-icons/gr";
 const Navbar = () => {
   const menuitems = <>
         <li><a href='#' >Home</a></li>
-        <li><a href='#' >Track Order</a></li>
+        <li className=''><Link to="./TrackOrder" >Track Order</Link ></li>
 
         <div className='dropdown-container'>
-        <li><a href='#' >Brand <FaAngleDown></FaAngleDown></a></li>
+        <li className='hidden lg:block'><a href='#' >Brand <FaAngleDown></FaAngleDown></a></li>
         <div className='dropdown-content'>
         <li><a href='#' >Our Brand</a></li>
         <li><a href='#' >Our Story & Charity Coast</a></li>
@@ -33,7 +33,7 @@ const Navbar = () => {
         </div>
         
         <div className='dropdown-container'>
-        <li><a href='#' >Services<FaAngleDown></FaAngleDown></a></li>
+        <li className='hidden lg:block'><a href='#' >Services<FaAngleDown></FaAngleDown></a></li>
           <div className='dropdown-content'>
           <li><a href='#' >FAQ</a></li>
           <li><a href='#' >Privace policy</a></li>
@@ -43,7 +43,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        <li><a href='#' >Contact Us</a></li>
+        <li className='hidden lg:block'><a href='#'  >Contact Us</a></li>
   </>
   return (
     <div className="navbar bg-base-100">

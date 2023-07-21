@@ -1,0 +1,23 @@
+import { getStoredCart } from "../components/Utilities/Utilities";
+
+
+export const productsAndCartLoaders = async () => {
+    // get Products
+    const productsData = await fetch('http://localhost:5000/product');
+    const {clothe} = await productsData.json();
+
+    // get cart
+    const savedCart = getStoredCart();
+    const initialCart = [];
+    
+    for (const id in savedCart) {
+        const addedProduct = clothe.find(product => product._id === id);
+        if (addedProduct) {
+            const quantity = savedCart[id];
+            addedProduct.quantity = quantity;
+            initialCart.push(addedProduct);
+        }
+    }
+
+    return { product :clothe, initialCart: initialCart };
+}
