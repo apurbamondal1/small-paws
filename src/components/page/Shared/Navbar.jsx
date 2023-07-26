@@ -3,9 +3,13 @@ import logo from '../../../assets/image/logo.png';
 import './Navbar.css';
 import { FaAngleDown,FaSistrix} from "react-icons/fa";
 import { GrCart } from "react-icons/gr";
+import { useContext } from 'react';
+import { AuthContex } from '../../../Contrext/UserContext';
+;
 
 
 const Navbar = () => {
+  const {user, logOut} = useContext(AuthContex)
   const menuitems = <>
         <li><a href='#' >Home</a></li>
         <li className=''><Link to="./TrackOrder" >Track Order</Link ></li>
@@ -64,16 +68,24 @@ const Navbar = () => {
       </ul>
     </div>
     <div className="navbar-end ">
-      {/* <FaCartShopping></FaCartShopping>  */}
       <FaSistrix></FaSistrix>
       <input type='text' placeholder='Search' ></input>
       
       <span className='mx-8'><GrCart></GrCart></span>
-      
-    {/* {/* <FaUserLarge></FaUserLarge> */}
     </div>
-    <div><h1 className='mx-5'><Link to = '/Login'>Login</Link></h1></div>
+    {
+                    user?.uid ?
+                        <button className='btn btn-secondary'  onClick={logOut}>Log out</button>
+                        :
+                        <>
+                            <Link  className='btn btn-primary' to="/login">Login</Link>
+                         
+                        </>
+                }
+    
+  
   </div>
+
   );
 };
 

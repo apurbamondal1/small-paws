@@ -5,3 +5,11 @@
     
    
 }
+.grand-total{
+   border: 1px solid blueviolet; 
+   background-color: #0c13e1;
+   color: azure;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 5px;
+}

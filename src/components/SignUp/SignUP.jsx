@@ -1,9 +1,21 @@
+
+import { useContext } from "react";
 import { useForm } from "react-hook-form";
+import { AuthContex } from "../../Contrext/UserContext";
 
 const SignUp = () => {
+ 
     const {register,handleSubmit} = useForm();
+    const {createUser} = useContext(AuthContex);
     const handleLogin = data =>{
         console.log(data);
+         createUser(data.email , data.password)
+        .then(result =>{
+          const user = result.user;
+          console.log(user)
+          
+        })
+        .catch(err => console.log(err))
     }
     return (
         <div className='h-[800px] flex justify-center items-center'>

@@ -6,6 +6,7 @@ import Login from "../Login/Login";
 import Clothe from "../Clothe/Clothe";
 import TrackOrder from "../TrackOrder/TrackOrder";
 import { productsAndCartLoaders } from "../../Loaders/productsAndCartLoaders";
+import Payment from "../../Payment/Payment";
 
 
 
@@ -27,7 +28,12 @@ export const router = createBrowserRouter([
 
       {
          path: "/Clothe",
-          element: <Clothe /> },
+          element: <Clothe /> 
+        },
+      {
+         path: "/payment",
+          element: <Payment /> 
+        },
       
     ],
   },

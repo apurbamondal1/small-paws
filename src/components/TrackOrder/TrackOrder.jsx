@@ -13,16 +13,19 @@ const TrackOrder = () => {
     const { initialCart } = useLoaderData();  // { products:clothe, initialCart: initialCart }
     const [product, setProduct] = useState(initialCart)
 
-    const handleRemoveItem = (id) => {
-        const remaining = product.filter(product => product._id !== id);
+    const handleRemoveItem = (_id) => {
+        const remaining = product.filter(product => product._id !== _id);
         setProduct(remaining);
-        removeFromDb(id);
+        removeFromDb(_id);
     }
 
     const clearCart = () =>{
         setProduct([]);
         deleteShoppingCart();
     }
+
+
+
 
     return (
         <div className='main'>
@@ -39,9 +42,11 @@ const TrackOrder = () => {
                 }
             </div>
             <div className=' second-container'>
-                <Cart clearCart={clearCart} product={product}></Cart>
+                <Cart clearCart={clearCart}  product={product}></Cart>
+               
             </div>
         </div>
+         
     );
 };
 

@@ -1,9 +1,9 @@
-import { FaTrashAlt } from "react-icons/fa";
+import { FaProductHunt, FaTrashAlt } from "react-icons/fa";
 import React from 'react';
 import './ReviewItem.css';
 
 const ReviewItem = ({product, handleRemoveItem}) => {
-    const {id, name, price, quantity,  image} = product;
+    const {_id, name, price, quantity,  image} = product;
     console.log(product)
     return (
         <div className='review-item'>
@@ -17,7 +17,7 @@ const ReviewItem = ({product, handleRemoveItem}) => {
                     <p><small>Quantity: {quantity}</small></p>
                 </div>
                 <div className="delete-container">
-                    <button onClick={() => handleRemoveItem(id)} className='btn-delete'>
+                    <button onClick={() => handleRemoveItem(_id)} className='btn-delete'>
                         <FaTrashAlt className='delete-icon'></FaTrashAlt>
                     </button>
                 </div>
